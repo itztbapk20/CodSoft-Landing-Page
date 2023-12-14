@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+:root {
+    --primary-color: #f9532d;
+    --primary-dark: #1F252E;
+}
+body{
+    background: #fff;
+    background-image: url(img/overlay.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    font-family: 'Playpen Sans', cursive;
+}
+section{
+    width: 90%;
+    height: 100vh;
+}
+
+.navbar{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar div{
+    padding: 0 20px;
+}
+.navbar .logo{
+   margin-left: 140px;
+}
+.navbar .logo img{
+    width: 60px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin:15px 30px;
+    padding: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-shadow: 0 4px 17px rgb(255 255 255 / 10%);
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    border-radius: 0 15px;
+    padding: 7px;
+    transition: background 0.5s;
+}
+.navbar ul li a:hover , 
+.navbar ul li a.active{
+        background: var(--primary-color);
+        color: #fff;
+}
+
+main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+main .text-box{
+    margin-top: 20px;
+    padding: 40px;
+}
+main p{
+    font-weight: 900;
+    font-size: 5rem;
+    color: var(--primary-dark);
+}
+main p span{
+    color: var(--primary-color);
+}
+main .img{
+    margin-right: -20px;
+}
+main .img img{
+    width: 380px;
+}
+.btn{
+    display: block;
+    margin: 40px 60px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: fit-content;
+    border: 2px solid var(--primary-color);
+    padding: 14px 50px;
+    border-radius: 10px;
+    background: none;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: var(--primary-color);
+    color: #fff;
+}
